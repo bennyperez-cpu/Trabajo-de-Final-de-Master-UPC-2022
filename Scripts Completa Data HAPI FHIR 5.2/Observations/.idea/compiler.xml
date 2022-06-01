@@ -6,8 +6,7 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
-        <module name="Patient_Script_Hapi_FHIR" />
-        <module name="Script_Hapi_FHIR_Patient" />
+        <module name="Observations" />
       </profile>
     </annotationProcessing>
   </component>
