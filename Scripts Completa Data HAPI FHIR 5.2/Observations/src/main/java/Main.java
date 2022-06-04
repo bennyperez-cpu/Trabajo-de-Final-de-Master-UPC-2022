@@ -9,12 +9,20 @@ import java.util.Random;
 
 public class Main {
 
-    static String[] observations = {"Glucosa [Moles/Volumen] in Blood + Hearth Disease + Presure 80", "Glucosa [Moles/Volumen] in Blood + High Pressure", "Glucosa [Moles/Volumen] in Blood + Low Presure", "", "Joan", "Cesar", "Pedro", "Alexis", "Fernando", "Roger" };
-    static String[] observationCode = {"15074-8", "Laura", "Gabriela", "Julia", "Veronika", "Monica", "Daniela", "Astrid", "Maritza", "Paola" };
-    static String[] lastNames = {"Cardenitash", "Berrocal", "Cardinale", "Pérez", "Zavala", "Ayala", "Bertrán", "Guardiola", "Morais", "Beramendi" };
+    static String[] observations = {"Glucosa [Moles/Volumen] in Blood + Hearth Disease + Normal Pressure(Pressure 80)",
+            "Glucosa [Moles/Volumen] in Blood + Hearth Disease + High Pressure(Pressure 125)",
+            "Glucosa [Moles/Volumen] in Blood + Hearth Disease + Low Pressure(Pressure 75)",
+            "Glucosa [Moles/Volumen] in Blood + Hearth Disease + Normal Pressure(Pressure 80)",
+            "Glucosa [Moles/Volumen] in Blood + Hearth Disease + Normal Pressure(Pressure 80) + High Weight",
+            "Hearth Disease + Normal Pressure(Pressure 80) + High Weight + Diabetes",
+            "High Pressure(Pressure 130) + Normal Weight",
+            "Low Pressure(Pressure 75) + High Weight + Hearth Disease",
+            "Low Pressure(Pressure 75) + High Weight + Hearth Disease + Diabetes",
+            "High Pressure(Pressure 135) + High Weight + Hearth Disease + Diabetes + Stress" };
+    static String[] observationCode = {"15074-1", "15074-2", "15074-3", "15074-4", "15074-5", "15074-6", "15074-7", "15074-8", "15074-9", "15074-10" };
 
     public static void main(String[] args) throws Exception{
-        for (int i=1; i<=500; ++i ) {
+        for (int i=10; i<=500+10; ++i ) {
             System.out.println(i);
             createObservation(i);
         }
@@ -29,9 +37,10 @@ public class Main {
         Random random = new Random();
 
         Coding coding = new Coding();
+        int idObs = random.nextInt(10);
         coding.setSystem("http://loinc.org");
-        coding.setCode("15074-8");
-        coding.setDisplay("Glucosa [Moles/Volumen] in Blood");
+        coding.setCode(observationCode[idObs]);
+        coding.setDisplay(observations[idObs]);
         Coding[] codings = {coding};
 
         Code code = new Code();
@@ -50,18 +59,13 @@ public class Main {
         RequestBody body = RequestBody.create(mediaType, jsonBody);
 
 
-/*        Request request = new Request.Builder()
+        Request request = new Request.Builder()
                 .url("http://localhost:8080/fhir/Observation/")
                 .method("POST", body)
                 .addHeader("Authorization", "Bearer 39ff939jgg")
                 .addHeader("Content-Type", "application/json")
                 .build();
-        Response response = client.newCall(request).execute();*/
-
+        Response response = client.newCall(request).execute();
 
     }
-
-
-
-
 }

@@ -1,80 +1,92 @@
 package model;
 
 public class Patient {
-        private Name name;
+        private Name[] name;
 
         private String resourceType = "Patient";
 
-        private Address address;
+        private Address[] address;
         private String id;
         private String gender;
         private String birthDate;
         private Practitioner[] generalPractitioner;
         private Organization managingOrganization;
 
+    public Patient() {
+    }
 
-    public Address getAddress() {
+    public Patient(Name[] name, String resourceType, Address[] address, String id, String gender, String birthDate, Practitioner[] generalPractitioner, Organization managingOrganization) {
+        this.name = name;
+        this.resourceType = resourceType;
+        this.address = address;
+        this.id = id;
+        this.gender = gender;
+        this.birthDate = birthDate;
+        this.generalPractitioner = generalPractitioner;
+        this.managingOrganization = managingOrganization;
+    }
+
+    public Name[] getName() {
+        return name;
+    }
+
+    public void setName(Name[] name) {
+        this.name = name;
+    }
+
+    public String getResourceType() {
+        return resourceType;
+    }
+
+    public void setResourceType(String resourceType) {
+        this.resourceType = resourceType;
+    }
+
+    public Address[] getAddress() {
         return address;
     }
 
-    public void setAddress(Address address) {
+    public void setAddress(Address[] address) {
         this.address = address;
     }
 
-    public Patient() {
-        }
+    public String getId() {
+        return id;
+    }
 
-        public Name getName() {
-            return name;
-        }
+    public void setId(String id) {
+        this.id = id;
+    }
 
-        public void setName(Name name) {
-            this.name = name;
-        }
+    public String getGender() {
+        return gender;
+    }
 
-        public String getGender() {
-            return gender;
-        }
+    public void setGender(String gender) {
+        this.gender = gender;
+    }
 
-        public void setGender(String gender) {
-            this.gender = gender;
-        }
+    public String getBirthDate() {
+        return birthDate;
+    }
 
-        public String getBirthDate() {
-            return birthDate;
-        }
-
-        public void setBirthDate(String birthDate) {
-            this.birthDate = birthDate;
-        }
+    public void setBirthDate(String birthDate) {
+        this.birthDate = birthDate;
+    }
 
     public Practitioner[] getGeneralPractitioner() {
-            return generalPractitioner;
-        }
+        return generalPractitioner;
+    }
 
-        public void setGeneralPractitioner(Practitioner[] generalPractitioner) {
-            this.generalPractitioner = generalPractitioner;
-        }
+    public void setGeneralPractitioner(Practitioner[] generalPractitioner) {
+        this.generalPractitioner = generalPractitioner;
+    }
 
-        public Organization getManagingOrganization() {
-            return managingOrganization;
-        }
+    public Organization getManagingOrganization() {
+        return managingOrganization;
+    }
 
-        public void setManagingOrganization(Organization managingOrganization) {
-            this.managingOrganization = managingOrganization;
-        }
-
-        public String getResourceType() {
-            return resourceType;
-        }
-
-        public void setResourceType(String resourceType) {
-            this.resourceType = resourceType;
-        }
-
-    @Override
-        public String toString() {
-            return "Patient{" + "id=" + id + ", birthday=" + birthDate + '}';
-        }
-
+    public void setManagingOrganization(Organization managingOrganization) {
+        this.managingOrganization = managingOrganization;
+    }
 }
