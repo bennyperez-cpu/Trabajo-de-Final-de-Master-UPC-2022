@@ -9,21 +9,21 @@ public class Patient {
         private String id;
         private String gender;
         private String birthDate;
-        private Practitioner[] generalPractitioner;
-        private Organization managingOrganization;
+        private generalPractitioner[] generalGeneralPractitioner;
+        private managingOrganization managingManagingOrganization;
 
     public Patient() {
     }
 
-    public Patient(Name[] name, String resourceType, Address[] address, String id, String gender, String birthDate, Practitioner[] generalPractitioner, Organization managingOrganization) {
+    public Patient(Name[] name, String resourceType, Address[] address, String id, String gender, String birthDate, generalPractitioner[] generalGeneralPractitioner, managingOrganization managingManagingOrganization) {
         this.name = name;
         this.resourceType = resourceType;
         this.address = address;
         this.id = id;
         this.gender = gender;
         this.birthDate = birthDate;
-        this.generalPractitioner = generalPractitioner;
-        this.managingOrganization = managingOrganization;
+        this.generalGeneralPractitioner = generalGeneralPractitioner;
+        this.managingManagingOrganization = managingManagingOrganization;
     }
 
     public Name[] getName() {
@@ -74,19 +74,19 @@ public class Patient {
         this.birthDate = birthDate;
     }
 
-    public Practitioner[] getGeneralPractitioner() {
-        return generalPractitioner;
+    public generalPractitioner[] getGeneralPractitioner() {
+        return generalGeneralPractitioner;
     }
 
-    public void setGeneralPractitioner(Practitioner[] generalPractitioner) {
-        this.generalPractitioner = generalPractitioner;
+    public void setGeneralPractitioner(generalPractitioner[] generalGeneralPractitioner) {
+        this.generalGeneralPractitioner = generalGeneralPractitioner;
     }
 
-    public Organization getManagingOrganization() {
-        return managingOrganization;
+    public managingOrganization getManagingOrganization() {
+        return managingManagingOrganization;
     }
 
-    public void setManagingOrganization(Organization managingOrganization) {
-        this.managingOrganization = managingOrganization;
+    public void setManagingOrganization(managingOrganization managingManagingOrganization) {
+        this.managingManagingOrganization = managingManagingOrganization;
     }
 }

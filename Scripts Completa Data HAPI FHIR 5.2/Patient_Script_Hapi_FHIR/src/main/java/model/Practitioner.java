@@ -1,13 +1,30 @@
 package model;
 
 public class Practitioner {
-    private Identifier identifier;
+    private String resourceType = "Practitioner";
+    private Name[] name;
 
-    public Identifier getIdentifier() {
-        return identifier;
+    public Practitioner() {
     }
 
-    public void setIdentifier(Identifier identifier) {
-        this.identifier = identifier;
+    public Practitioner(String resourceType, Name[] name) {
+        this.resourceType = resourceType;
+        this.name = name;
+    }
+
+    public String getResourceType() {
+        return resourceType;
+    }
+
+    public void setResourceType(String resourceType) {
+        this.resourceType = resourceType;
+    }
+
+    public Name[] getName() {
+        return name;
+    }
+
+    public void setName(Name[] name) {
+        this.name = name;
     }
 }
