@@ -1,0 +1,123 @@
+CREATE TABLE usuarios(id_usu INT not null primary key generated always as identity (start with 1, increment by 1),
+nombre VARCHAR(50) NOT NULL,
+apellido VARCHAR(50) NOT NULL,
+correo_electronico VARCHAR(50) NOT NULL,
+nombre_de_usuario VARCHAR(50) NOT NULL,
+contrasenha VARCHAR(50) NOT NULL);
+
+CREATE TABLE videos(id_vid INT not null primary key generated always as identity (start with 1, increment by 1),
+titulo VARCHAR(50) NOT NULL,
+autor VARCHAR(50) NOT NULL,
+fecha_de_creacion date NOT NULL,
+duracion Time NOT NULL,
+numero_de_reproducciones INT NOT NULL,
+descripcion VARCHAR(50) NOT NULL,
+formato VARCHAR(50) NOT NULL),
+enlace VARCHAR(50) NOT NULL);
+
+
+
+ALTER TABLE table_name ADD column_name datatype;
+
+(    
+   ALTER TABLE table_name ADD "USER_ID" INT not null primary key GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1),   
+   "FNAME" VARCHAR(50),     
+   "LNAME" VARCHAR(50),
+   "ADDR" VARCHAR(100),
+   "SUBURB" VARCHAR(20),
+   "PCODE" INTEGER,  
+   "PHONE" INTEGER,
+   "MOB" INTEGER,    
+   "EMAIL" VARCHAR(100),
+   "COMM" VARCHAR(450)    
+);
+
+
+SELECT * FROM ISDCM.VIDEOS WHERE TITULO='ascdA'
+
+CREATE TABLE usuarios(id_usu INT not null primary key generated always as identity (start with 1, increment by 1),
+nombres VARCHAR(50) NOT NULL,
+apellidos VARCHAR(50) NOT NULL,
+//correo_electronico VARCHAR(50) NOT NULL,
+nombre_de_usuario VARCHAR(50) NOT NULL,
+contrasenha VARCHAR(50) NOT NULL),
+idFhir VARCHAR(50) NOT NULL);
+
+CREATE TABLE videos3(id_vid INT not null primary key generated always as identity (start with 1, increment by 1),
+titulo VARCHAR(50) NOT NULL,
+autor VARCHAR(50) NOT NULL,
+fecha_de_creacion date NOT NULL,
+duracion Time NOT NULL,
+numero_de_reproducciones INT NOT NULL,
+descripcion VARCHAR(50) NOT NULL,
+formato VARCHAR(50) NOT NULL);
+
+
+
+ALTER TABLE table_name ADD column_name datatype;
+
+(    
+   ALTER TABLE table_name ADD "USER_ID" INT not null primary key GENERATED ALWAYS AS IDENTITY (START WITH 1, INCREMENT BY 1),   
+   "FNAME" VARCHAR(50),     
+   "LNAME" VARCHAR(50),
+   "ADDR" VARCHAR(100),
+   "SUBURB" VARCHAR(20),
+   "PCODE" INTEGER,  
+   "PHONE" INTEGER,
+   "MOB" INTEGER,    
+   "EMAIL" VARCHAR(100),
+   "COMM" VARCHAR(450)    
+);
+
+
+SELECT * FROM ISDCM.VIDEOS WHERE TITULO='ascdA'
+
+delete from TFM.USUARIOS; //Elimina registros
+SELECT * FROM TFM.USUARIOS FETCH FIRST 100 ROWS ONLY;
+
+INSERT INTO USUARIOS (NOMBRES, APELLIDOS, NOMBRE_DE_USUARIO, CONTRASENHA) VALUES + (Administrador, Administrador, admin,admin);
+INSERT INTO USUARIOS (NOMBRES, APELLIDOS, NOMBRE_DE_USUARIO, CONTRASENHA) VALUES + (Arturo, Sanchez,Patient1,Patient12345);
+INSERT INTO USUARIOS (NOMBRES, APELLIDOS, NOMBRE_DE_USUARIO, CONTRASENHA) VALUES + (Carlos, Alcantara, Nurse1,Nurse12345);
+INSERT INTO USUARIOS (NOMBRES, APELLIDOS, NOMBRE_DE_USUARIO, CONTRASENHA) VALUES + (Patricia, Gutierrez,Doctor1,Doctor12345)
+
+INSERT INTO VIDEOS (NOMBRES, APELLIDOS, NOMBRE_DE_USUARIO, CONTRASENHA) VALUES + (Patricia, Gutierrez,Doctor1,Doctor12345)
+
+
+
+
+--------------------------------------------------------
+INSERT INTO USUARIOS (NOMBRES, APELLIDOS, NOMBRE_DE_USUARIO, CONTRASENHA, IDFHIR) VALUES  ('Administrador', 'Administrador', 'admin','admin12345','none');
+INSERT INTO USUARIOS (NOMBRES, APELLIDOS, NOMBRE_DE_USUARIO, CONTRASENHA, IDFHIR) VALUES  ('Arturo', 'Sanchez','Patient1','Patient12345','1603');
+INSERT INTO USUARIOS (NOMBRES, APELLIDOS, NOMBRE_DE_USUARIO, CONTRASENHA, IDFHIR) VALUES  ('Carlos', 'Alcantara', 'Practitioner1','Practitioner12345','1652');
+INSERT INTO USUARIOS (NOMBRES, APELLIDOS, NOMBRE_DE_USUARIO, CONTRASENHA, IDFHIR) VALUES  ('Corachan', 'Corachan','Organization1','Organization12345','1653');
+SELECT * FROM TFM.USUARIOS FETCH FIRST 100 ROWS ONLY;
+
+delete from TFM.USUARIOS where ID_USU=1;
+SELECT * FROM TFM.USUARIOS FETCH FIRST 100 ROWS ONLY;
+
+
+SELECT * FROM TFM.USUARIOS FETCH FIRST 100 ROWS ONLY; 
+
+alter table TFM.USUARIOS 
+
+delete from TFM.USUARIOS;
+alter table TFM.USUARIOS alter column ID_USU restart with 1;
+SELECT * FROM TFM.USUARIOS FETCH FIRST 100 ROWS ONLY;
+
+delete from ISDCM.videos;
+alter table ISDCM.videos alter column ID_VID restart with 1;
+SELECT * FROM ISDCM.videos FETCH FIRST 100 ROWS ONLY;
+
+drop table TFM.USUARIOS
+
+TRUNCATE TABLE TFM.USUARIOS
+
+CREATE TABLE usuarios(id_usu INT not null primary key generated always as identity (start with 1, increment by 1),
+nombres VARCHAR(50) NOT NULL,
+apellidos VARCHAR(50) NOT NULL,
+nombre_de_usuario VARCHAR(50) NOT NULL,
+contrasenha VARCHAR(50) NOT NULL);
+
+
+UPDATE TFM.USUARIOS SET IDFHIR = '39ff939jgg' WHERE ID_USU = 1,
+SELECT * FROM TFM.USUARIOS FETCH FIRST 100 ROWS ONLY;
