@@ -37,7 +37,7 @@ public class Usuario_DAO implements Validar{
     PreparedStatement ps;
     ResultSet rs;
     int r,ID;
-    static String url = "http://10.0.0.224:8080/fhir";
+    static String url = "http://192.168.1.14:8080/fhir";
    
     //Login de Usuario
     @Override
@@ -165,8 +165,8 @@ public static Patient[] getPatientsData() throws JsonMappingException, JsonProce
             String organization = node.get("entry").get(i).get("resource").get("managingOrganization").get("identifier").get("id").asText();
             String gender = node.get("entry").get(i).get("resource").get("gender").asText();
             
-            System.out.println("El i es: " + i);
-            System.out.println("El id es: " + id);
+//            System.out.println("El i es: " + i);
+//            System.out.println("El id es: " + id);
             
             
             patient.setId(id);

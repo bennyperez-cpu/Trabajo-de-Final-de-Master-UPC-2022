@@ -113,54 +113,7 @@
                                         <button name="action" value="search-patient" type="submit" class="button" ><i class="fa-solid fa-magnifying-glass" opacity="1"></i> Search</button>
 
                                     </form>
-                                </div>
-
-                            
-                                <div class='container2 col-3 border border-primary m-1   text-center'>
-                                    <form action="${pageContext.request.contextPath}/Principal_Servlet" method="POST">
-                                      
-
-                                        <div class = "form-group">
-                                            <label for="minAge" >Edad Mínima</label>
-                                            <input name="minAge" type="text" class="form-control" id="minAge" placeholder="30">
-                                        </div>
-
-                                        <div class = "form-group">
-                                            <label for="maxAge" >Edad Máxima</label>
-                                            <input name="maxAge" type="text" class="form-control" id="maxAge" placeholder="50">
-                                        </div>
-
-                                        <div class = "form-group">  
-                                            <label for="keyWord1" >Condición 1</label>
-                                            <input name="keyWord1" type="text" class="form-control" id="keyWord1" placeholder="Blood">
-
-                                        </div>
-                                        <div class = "form-group">  
-                                            <label for="keyWord1" >Condición 2</label>
-                                            <input name="keyWord2" type="text" class="form-control" id="keyWord2" placeholder="Blood">
-
-                                        </div>
-                                        <div class = "form-group">  
-                                            <label for="keyWord3" >Condición 3</label>
-                                            <input name="keyWord3" type="text" class="form-control" id="keyWord3" placeholder="Blood">
-
-                                        </div>
-
-                                        <div class = "form-group">
-                                            <label for="minPressure" >Presión Mínima</label>
-                                            <input name="minPressure" type="text" class="form-control" id="minPressure" placeholder="30">
-                                        </div>
-
-                                        <div class = "form-group">
-                                            <label for="maxPressure" >Presión Máxima</label>
-                                            <input name="maxPressure" type="text" class="form-control" id="maxPressure" placeholder="50">
-                                        </div>
-
-                                        <br>
-                                        <button name="action" value="search-statistic" type="submit" class="button"><i class="fa-solid fa-magnifying-glass"></i> Search</button> 
-                                    </form>
-                                </div>                                                              
-                                
+                                </div>                                 
                             </div>
                         <% }else if (session.getAttribute("Patient_list") != null && session.getAttribute("statistics") == null){ %>
                             <form action="${pageContext.request.contextPath}/Principal_Servlet" method="post">
