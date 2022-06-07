@@ -11,16 +11,16 @@ public class Main {
     static String[] femaleNames = {"Maria", "Laura", "Gabriela", "Julia", "Veronika", "Monica", "Daniela", "Astrid", "Maritza", "Paola" };
     static String[] lastNames = {"Cardenitash", "Berrocal", "Cardinale", "Pérez", "Zavala", "Ayala", "Bertrán", "Guardiola", "Morais", "Beramendi" };
 
-    static String[] observations = {"Glucosa [Moles/Volumen] in Blood + Hearth Disease + Normal Pressure(BLOOD_PRESSURE 80)",
-            "Glucosa [Moles/Volumen] in Blood + Hearth Disease + High Pressure(BLOOD_PRESSURE 125)",
-            "Glucosa [Moles/Volumen] in Blood + Hearth Disease + Low Pressure(BLOOD_PRESSURE 75)",
-            "Glucosa [Moles/Volumen] in Blood + Hearth Disease + Normal Pressure(BLOOD_PRESSURE 80)",
-            "Glucosa [Moles/Volumen] in Blood + Hearth Disease + Normal Pressure(BLOOD_PRESSURE 80) + High Weight",
-            "Hearth Disease + Normal Pressure(Pressure 80) + High Weight + Diabetes",
-            "High Pressure(BLOOD_PRESSURE 130) + Normal Weight",
-            "Low Pressure(BLOOD_PRESSURE 75) + High Weight + Hearth Disease",
-            "Low Pressure(BLOOD_PRESSURE 75) + High Weight + Hearth Disease + Diabetes",
-            "High Pressure(BLOOD_PRESSURE 135) + High Weight + Hearth Disease + Diabetes + Stress" };
+    static String[] observations = {"Glucosa [Moles/Volumen] in Blood + Hearth Disease + Normal Pressure(Blood Pressure 80 )",
+            "Glucosa [Moles/Volumen] in Blood + Hearth Disease + High Pressure(Blood Pressure 125 )",
+            "Glucosa [Moles/Volumen] in Blood + Hearth Disease + Low Pressure(Blood Pressure 75 )",
+            "Glucosa [Moles/Volumen] in Blood + Hearth Disease + Normal Pressure(Blood Pressure 80 )",
+            "Glucosa [Moles/Volumen] in Blood + Hearth Disease + Normal Pressure(Blood Pressure 80 ) + High Weight",
+            "Hearth Disease + Normal Pressure(Blood Pressure 80 ) + High Weight + Diabetes",
+            "High Pressure(Blood Pressure 130 ) + Normal Weight",
+            "Low Pressure(Blood Pressure 75 ) + High Weight + Hearth Disease",
+            "Low Pressure(Blood Pressure 75 ) + High Weight + Hearth Disease + Diabetes",
+            "High Pressure(Blood Pressure 135 ) + High Weight + Hearth Disease + Diabetes + Stress" };
     static String[] observationCode = {"15074-1", "15074-2", "15074-3", "15074-4", "15074-5", "15074-6", "15074-7", "15074-8", "15074-9", "15074-10" };
 
     static String[] organizationName = {"Clínica Corachan", "Clínica Japonesa","Clínica Internacional", "Clínica Barcelona"};
