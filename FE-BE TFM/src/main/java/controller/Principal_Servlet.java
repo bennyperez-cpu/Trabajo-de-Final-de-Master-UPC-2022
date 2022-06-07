@@ -68,13 +68,13 @@ public class Principal_Servlet extends HttpServlet {
                 //String statisc = (String) request.getParameter("statisticsCal");
                 
                 log("La estadística es: " + request.getParameter("statisticsCal"));
-                if((request.getParameter("statisticsCal") == "on")){
+                if((request.getParameter("statisticsCal") != null)){
                     idFhir = "39ff939jgg";
                     
                 }else{ 
                     idFhir = (String) request.getSession().getAttribute("idFhir");
                 }
-                
+                System.out.println("El idFHIR es: " + idFhir.toString());
                 search_2(request, response, value1, value2, value3, value4, keyWord1, keyWord2, keyWord3, idFhir);
                 break;
 
@@ -84,6 +84,13 @@ public class Principal_Servlet extends HttpServlet {
                 request.getSession().removeAttribute("statistics");
                 String requestorType = (String) request.getSession().getAttribute("requestorType");
                 returnFE(request, response, requestorType);                
+                
+                break;
+                
+            case "Salir":
+                request.getSession().removeAttribute("Patient_list");
+                request.getSession().removeAttribute("statistics");
+                response.sendRedirect("Login.jsp");
                 
                 break;
 
@@ -133,7 +140,7 @@ public class Principal_Servlet extends HttpServlet {
     protected void search_2(HttpServletRequest request, HttpServletResponse response, String minAge, String maxAge,
                             String minPressure, String maxPressure, String keyWord1, String keyWord2, String keyWord3,
                             String idFhir) throws IOException {
-    //log("Buscando search_2 por " + minAge + " " + maxAge + " " + keyWord);
+   
 
 
     List<Condition> conditions = new ArrayList<>();

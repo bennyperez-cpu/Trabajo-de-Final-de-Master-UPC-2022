@@ -80,7 +80,7 @@
                 </ul>
                 <ul class='list-unstyled CTAs  text-center'>
                     <li>
-                        <a href="Principal_Servlet?accion=Salir">Salir</a>
+                        <a href="Principal_Servlet?action=Salir">Salir</a>
                     </li> 
                 </ul>
             </nav>
