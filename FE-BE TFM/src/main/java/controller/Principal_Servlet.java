@@ -86,6 +86,13 @@ public class Principal_Servlet extends HttpServlet {
                 returnFE(request, response, requestorType);                
                 
                 break;
+                
+            case "Salir":
+                request.getSession().removeAttribute("Patient_list");
+                request.getSession().removeAttribute("statistics");
+                response.sendRedirect("Login.jsp");
+                
+                break;
 
             default:
                 break;

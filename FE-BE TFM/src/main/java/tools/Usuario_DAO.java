@@ -189,6 +189,8 @@ public static Observation[] getObservationsData() throws JsonMappingException, J
         
         int total = 500;
         //int total = Integer.parseInt(node.get("total").asText());
+        
+        //int total = node.get("entry").
         Observation[] observations = new Observation[total];
         for (int i = 0; i < total; ++i) {
             Observation observation = new Observation();
