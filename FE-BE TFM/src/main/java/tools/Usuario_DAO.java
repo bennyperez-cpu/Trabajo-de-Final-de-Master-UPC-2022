@@ -32,6 +32,7 @@ import model.Observation;
  * @author alumne
  */
 public class Usuario_DAO implements Validar{
+    static Observation[] cachedObservations = null;
     Connection con;
     Conexion_DB cn = new Conexion_DB();
     PreparedStatement ps;
@@ -180,6 +181,10 @@ public static Patient[] getPatientsData() throws JsonMappingException, JsonProce
     }
 
 public static Observation[] getObservationsData() throws JsonMappingException, JsonProcessingException{
+        if (cachedObservations != null){
+            return cachedObservations;
+        }
+    
         javax.ws.rs.client.Client client = ClientBuilder.newClient();
         Response response = client.target(url)
                 .path("Observation").request(MediaType.APPLICATION_JSON).header("Authorization", "Bearer 39ff939jgg").get();
@@ -203,7 +208,8 @@ public static Observation[] getObservationsData() throws JsonMappingException, J
             observation.setIdPatient(patient);
             observations[i] = observation;
         }
-        return observations;
+        cachedObservations = observations;
+        return cachedObservations;
     }
     
     private static int patientHasKeyWord(Observation[] observations, String idPatient, String keyWord ) {
@@ -227,7 +233,7 @@ public static Observation[] getObservationsData() throws JsonMappingException, J
 
     public static int getStatistics(List<Condition> conditions, String requestor) throws JsonProcessingException{
         Patient[] patients =  getPatientsData();
-        Observation[] observations = getObservationsData();
+       //Observation[] observations = getObservationsData();
         int quantity = 0;
         for(Patient patient:patients) {
             if ((requestor.equals("39ff939jgg") || requestor.equals(patient.getPractitioner())

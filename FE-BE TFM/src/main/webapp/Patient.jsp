@@ -105,7 +105,7 @@
                                     <form action="${pageContext.request.contextPath}/Principal_Servlet" method="POST">
                                         <div class = "form-group">  
                                             <label for="patient1" >Paciente</label>
-                                            <input name="patient1" type="text" class="form-control" id="paciente1" placeholder="John Doe" required>
+                                            <input name="patient1" type="text" class="form-control" id="paciente1" placeholder="ID del Paciente" required>
 
                                             <br>
                                         </div>

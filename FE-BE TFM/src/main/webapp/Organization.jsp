@@ -105,7 +105,7 @@
                                     <form action="${pageContext.request.contextPath}/Principal_Servlet" method="POST">
                                         <div class = "form-group">  
                                             <label for="patient1" >Paciente</label>
-                                            <input name="patient1" type="text" class="form-control" id="paciente1" placeholder="John Doe" required>
+                                            <input name="patient1" type="text" class="form-control" id="paciente1" placeholder="ID del Paciente" required>
 
                                             <br>
                                         </div>
@@ -137,28 +137,28 @@
 
                                         <div class = "form-group">  
                                             <label for="keyWord1" >Condición 1</label>
-                                            <input name="keyWord1" type="text" class="form-control" id="keyWord1" placeholder="Blood">
+                                            <input name="keyWord1" type="text" class="form-control" id="keyWord1" placeholder="Glucosa">
 
                                         </div>
                                         <div class = "form-group">  
                                             <label for="keyWord1" >Condición 2</label>
-                                            <input name="keyWord2" type="text" class="form-control" id="keyWord2" placeholder="Blood">
+                                            <input name="keyWord2" type="text" class="form-control" id="keyWord2" placeholder="Hearth Disease">
 
                                         </div>
                                         <div class = "form-group">  
                                             <label for="keyWord3" >Condición 3</label>
-                                            <input name="keyWord3" type="text" class="form-control" id="keyWord3" placeholder="Blood">
+                                            <input name="keyWord3" type="text" class="form-control" id="keyWord3" placeholder="Diabetes">
 
                                         </div>
 
                                         <div class = "form-group">
                                             <label for="minPressure" >Presión Mínima</label>
-                                            <input name="minPressure" type="text" class="form-control" id="minPressure" placeholder="30">
+                                            <input name="minPressure" type="text" class="form-control" id="minPressure" placeholder="70">
                                         </div>
 
                                         <div class = "form-group">
                                             <label for="maxPressure" >Presión Máxima</label>
-                                            <input name="maxPressure" type="text" class="form-control" id="maxPressure" placeholder="50">
+                                            <input name="maxPressure" type="text" class="form-control" id="maxPressure" placeholder="115">
                                         </div>
 
                                         <br>

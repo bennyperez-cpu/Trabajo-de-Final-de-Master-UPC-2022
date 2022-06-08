@@ -65,7 +65,7 @@ public class Principal_Servlet extends HttpServlet {
                 keyWord3 = request.getParameter("keyWord3");
                 value3 = request.getParameter("minPressure");
                 value4 = request.getParameter("maxPressure");
-                //String statisc = (String) request.getParameter("statisticsCal");
+              
                 
                 log("La estadística es: " + request.getParameter("statisticsCal"));
                 if((request.getParameter("statisticsCal") != null)){
