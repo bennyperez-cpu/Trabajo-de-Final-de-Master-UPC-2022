@@ -1,9 +1,0 @@
-model/Observation.class
-tools/Conexion_DB.class
-model/Condition.class
-controller/User_Servlet.class
-controller/Principal_Servlet.class
-tools/Validar.class
-model/User.class
-tools/Usuario_DAO.class
-model/Patient.class
