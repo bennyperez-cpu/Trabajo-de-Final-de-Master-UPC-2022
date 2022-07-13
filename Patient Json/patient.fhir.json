@@ -1,0 +1,52 @@
+{
+    "resourceType": "Patient",
+    "name": [
+        {
+            "use": "official",
+            "given": ["Benny"],
+            "family": "Perez"
+        }
+    ],
+    "gender": "male",
+    "birthDate": "1986-06-13",
+    
+    "telecom": [
+        {
+            "value": "662261737",
+            "use": "mobile",
+            "system":"phone"
+        },
+        {
+            "system":"email",
+            "value": "benny.hammer.perez"
+        }        
+    ],
+    "address":[
+        {
+            "line":[
+                "74, Torrent Gornal Piso 1"
+            ],
+            "city": "Barcelona",
+            "state": "Girona",
+            "postalCode": "08904"
+
+        }
+            
+    ],
+    "generalPractitioner": [
+        
+        {
+            "identifier": {
+                "id": "2021"
+            }       
+        }
+    ],
+
+    "managingOrganization": {
+        "identifier": {
+            "id": "3031"   
+        }
+
+    }
+    
+}

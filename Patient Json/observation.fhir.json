@@ -1,0 +1,32 @@
+{
+    "resourceType": "Observation",
+    "status": "corrected",
+    "comment": "status puede ser final",
+    "comment": "Si se quiere poner le update, aparte del Put se tiene que poner el id de la observación en la url",
+    "comment": "Con el put se hace el update",
+    "comment": "hola",
+    
+    "code": {
+        "coding": [
+            {
+                "system": "http://loinc.org",
+                "code": "15074-8",
+                "display": "Glucosa [Moles/Volumen] in Blood"
+            }
+        ]
+    },
+    "subject": {
+        "reference": "Patient/1603",
+        "display": "Benny Perez"
+
+    },
+    "valueQuantity": {
+        "value": 6.3,
+        "unit": "mmol/1",
+        "system": "http://unisoftmeasure.org",
+        "code": "mmol/L"
+    }
+    
+
+}
+    
